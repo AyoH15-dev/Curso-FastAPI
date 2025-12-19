@@ -1,3 +1,4 @@
+import os
 from pymongo import MongoClient
 
 # ---------- BASE DE DATOS LOCAL ---------- #
@@ -11,5 +12,7 @@ from pymongo import MongoClient
 
 # La petición a la API sigue siendo http://127.0.0.1:8000#
 # Pero la base de datos está en la nube, en MongoDB Atlas
-db_client = MongoClient(
-    'mongodb+srv://admin_test:admin_test@cluster0.xkvt1jj.mongodb.net/?appName=Cluster0').admin_test
+# Para subir mi API a producción, debo cambiar la variable de entorno MONGO_URI para no exponer mi URI públicamente
+MONGO_URI = os.getenv("MONGO_URI")
+
+db_client = MongoClient(MONGO_URI).admin_test

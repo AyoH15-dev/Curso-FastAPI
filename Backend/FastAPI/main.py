@@ -1,7 +1,11 @@
 #FastAPI tiene soporte para Docker
+from dotenv import load_dotenv
+load_dotenv() # Carga las variables de entorno del archivo .env
+
 from fastapi import FastAPI
 from routers import products, users, basic_auth_users, jwt_auth_users, users_db
 from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI() # Creamos una clase que se llama app
 

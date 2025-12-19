@@ -1,2 +1,3 @@
 .fast_api_course/
 __pycache__/
+.env
