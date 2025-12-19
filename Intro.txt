@@ -1,0 +1,52 @@
+-Framework: Un marco de trabajo, son herramientas que nos permiten hacer algo.
+
+-FastAPI: Un framework que facilita la programación, tiene alto rendimiento a la par con Node.JS y Go.
+    JSON Schema es un estándar abierto para definir la estructura, el contenido y las reglas de los documentos JSON, permitiendo su validación para garantizar la consistencia de los datos. NORMAS PARA ESCRIBIR ARCHIVOS .json
+
+-API: Interfaz de programación de aplicaciones (Application Programming Interface): Es una capa de comunicación que nos permite ciertos mecanismos para que podamos hablar con el backend.
+
+
+#---------- CÓDIGOS HTTP ----------#
+# 100 - 199: Respuestas informativas
+# 200 - 299: Respuestas para indicar que todo ha ido bien
+# 300 - 399: Mensajes redireccionados
+# 400 - 499: Errores del cliente 
+# 500 - 599: Errores del servidor
+
+# 200: Las cosas han ido bien
+" 201: Todo ha ido bien y se ha creado algo
+# 204: Se usa cuando no hay contenido que retornar al cliente
+# 300:
+# 304:
+# 400:
+# 404: Algo ha ido mal
+# 422: 
+# 500: El servidor se ha caído y no ha manejado la petición
+
+#---------- POSTMAN ----------#
+# Manda peticiones a la página web
+# Nos da datos como el tiempo que tardó, cookies guardadas, etc
+
+#---------- 1. PETICIONES HTTP ----------#
+-GET: Para leer datos
+-POST: Para crear datos
+-PUT: Para actualizar datos
+-DELETE: Para eliminar datos
+
+#---------- 2. CREACIÓN API ----------#
+-CRUD: Create Read Update DELETE
+
+#---------- MONGODB ----------#
+1. En la página buscar MongoDB Community Server, descargar
+2. Descargar MongoDB Command Line Database Tools Download
+
+#---------- MONGODB ATLAS ----------#
+1. Entrar a la página de MongoDB, iniciar sesión
+2. Crear un proyecto
+3. En Cluster, crear uno, ir a configuraciones avanzadas
+4. Crear usuario y contraseña, y seleccionar My Local Environment y crear cluster
+5. En el menú de Clusters, oprimir en Connect, conectar desde VS Code, copiar la URL
+6. Ir a VS Code, desconectar la base de datos local, oprimir en Connect with Connection String y pegar la URL
+7. Ya conectado a la base de datos, en la página de Mongo, oprimir Go Back y seleccionar Drivers
+8. Escoger la versión de Python, copiar la URL y pegar dentro de MongoClient('URL')
+9. En Clusters, oprimir en Browse Collections, ahí se muestran las colecciones que creemos
